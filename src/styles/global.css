@@ -9,24 +9,26 @@ body {
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #1a004b;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #ffffff;
 }
 h1,
-h2,
+h2 {
+	color: #ffffff;
+}
 h3,
 h4,
 h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: #000000;
 }
 a {
-	color: #3273dc;
+	color: #6ea6ff;
 }
 nav a {
 	margin-right: 10px;
