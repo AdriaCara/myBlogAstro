@@ -47,6 +47,7 @@ const { href, title, body, time } = Astro.props;
 		color: #111;
 		background-color: white;
 		opacity: 0.8;
+		text-align: center;
 	}
 	h2 {
 		margin: 0;
@@ -57,13 +58,16 @@ const { href, title, body, time } = Astro.props;
 	p {
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
-		color: #444;
+		text-shadow: 0 0 0.8vh rgb(0, 0, 0);
+   		color: transparent;
 	}
 	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
+		background: #ffffff;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
+		color: #0022ff;
+	}
+	.link-card:is(:hover, :focus-within) p {
+		text-shadow: 0 0 0 rgb(0, 0, 0);
 	}
 </style>
