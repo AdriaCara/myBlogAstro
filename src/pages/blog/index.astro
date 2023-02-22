@@ -39,11 +39,12 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
+						posts.reverse().map((post) => (
 							<Card
 								href={`/blog/${post.slug}/` ?? ""}
-								title={post.data.title}
-								body={post.data.pubDate.toISOString()}
+								title={post.data.title || "Error, title not found"}
+								body={post.data.description || "Error, description not found"}
+								time={post.data.pubDate.toISOString() || "Not found"}
 							/>
 						))
 					}

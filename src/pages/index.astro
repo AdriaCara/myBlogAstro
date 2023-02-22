@@ -25,17 +25,20 @@ const posts = (await getCollection('blog')).sort(
 				<ul>
 					<li>Filosofia</li>
 					<li>Actualidad</li>
+					<li>Tecnologia</li>
+					<li>Lo que surja...</li>
 				</ul>
 			</p>
 			<section>
 				<h2>Mis dos últimas publicaciones</h2>
 				<ul>
 					{
-						posts.map((post, index) => (
-							(index < 2) && <Card
+						posts.reverse().slice(0, 2).map((post) => (
+							<Card
 								href={`/blog/${post.slug}/` ?? ""}
-								title={post.data.title}
-								body={post.data.pubDate.toISOString()}
+								title={post.data.title || "Error, title not found"}
+								body={post.data.description || "Error, description not found"}
+								time={post.data.pubDate.toISOString() ?? "2022"}
 							/>
 						))
 					}
