@@ -3,10 +3,13 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+html{
+	background: #10002b;
+ }
 body {
 	font-family: Verdana, sans-serif;
 	margin: auto;
-	padding: 20px;
+	padding: 5vh;
 	max-width: 65ch;
 	text-align: left;
 	background-color: #1a004b;
@@ -14,6 +17,14 @@ body {
 	overflow-wrap: break-word;
 	line-height: 1.5;
 	color: #ffffff;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+
 }
 h1,
 h2 {

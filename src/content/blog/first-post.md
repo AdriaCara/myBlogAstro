@@ -1,7 +1,7 @@
 ---
-title: "First post"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 08 2022"
+title: "Transhumanismo h+"
+description: "Una pequeña pincelada para entender que es el h+"
+pubDate: "2022-02-02:00:00.000Z"
 heroImage: "/placeholder-hero.jpg"
 ---
 
