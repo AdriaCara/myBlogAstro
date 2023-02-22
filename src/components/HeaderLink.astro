@@ -21,4 +21,12 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 		text-decoration: underline;
 		color: #3effff;
 	}
+	a:hover {
+		color: #3effff;
+		text-decoration: underline;
+	}
+	a:is(:hover, :focus-within) a.active {
+		text-decoration:overline;
+		color: #3ea8ff;
+	}
 </style>
