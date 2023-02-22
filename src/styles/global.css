@@ -3,40 +3,53 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+html{
+	background: #10002b;
+ }
 body {
 	font-family: Verdana, sans-serif;
 	margin: auto;
-	padding: 20px;
+	padding: 5vh;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #1a004b;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #ffffff;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
+
 }
 h1,
-h2,
+h2 {
+	color: #ffffff;
+}
 h3,
 h4,
 h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: #000000;
 }
 a {
-	color: #3273dc;
+	color: #6ea6ff;
 }
 nav a {
-	margin-right: 10px;
+	margin-right: 1vh;
 }
 textarea {
 	width: 100%;
-	font-size: 16px;
+	font-size: 1vh;
 }
 input {
-	font-size: 16px;
+	font-size: 1vh;
 }
 content {
 	line-height: 1.6;
@@ -49,8 +62,8 @@ img {
 	height: auto;
 }
 code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
+	padding: 0.3vh 0.5vh;
+	background-color: #6c0072;
 }
 pre {
 	padding: 1rem;
@@ -64,4 +77,8 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+
+p {
+	font-size: 2vh;
 }

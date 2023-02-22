@@ -2,9 +2,9 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import Card from '../../components/Card.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -29,7 +29,7 @@ const posts = (await getCollection('blog')).sort(
 				color: #595959;
 			}
 			ul li a:visited {
-				color: #8e32dc;
+				color: #3cff00;
 			}
 		</style>
 	</head>
@@ -39,11 +39,13 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
-							<li>
-								<FormattedDate date={post.data.pubDate} />
-								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-							</li>
+						posts.reverse().map((post) => (
+							<Card
+								href={`/blog/${post.slug}/` ?? ""}
+								title={post.data.title || "Error, title not found"}
+								body={post.data.description || "Error, description not found"}
+								time={post.data.pubDate.toISOString() || "Not found"}
+							/>
 						))
 					}
 				</ul>
