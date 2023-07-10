@@ -1,8 +1,8 @@
 ---
-title: "Bombas de racimo
+title: "Bombas de racimo"
 description: "Estados unidos confirma enviar bombas de racimo a ucrania"
 pubDate: "2023-07-11:00:47:40Z"
-heroImage: "/2023_02_02_Transhumanismo.jpg"
+heroImage: "/2023_07_11_BombasDeRacimo.jpg"
 ---
 
 
